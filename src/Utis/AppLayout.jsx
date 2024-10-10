@@ -1,15 +1,9 @@
-import React, { useState } from 'react';
-import NotFound from './Utis/404';
+import React from 'react';
+import NotFound from './404';
 
 const isMobileDevice = () => /Mobi|Android/i.test(navigator.userAgent);
 
-const AppLayout = ({ children }) => {
-    const [isError, setIsError] = useState(false);
-
-    const handleError = () => {
-        setIsError(true);
-    };
-
+const AppLayout = ({ children, isError }) => {
     return (
         <div className="min-h-screen flex flex-col">
             {isError ? (
