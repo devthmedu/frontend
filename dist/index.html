@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio de Thomas Eduardo, desenvolvedor web com experiência em JavaScript, Node.js e React.">
+    <meta name="keywords" content="Thomas Eduardo, desenvolvedor web, JavaScript, Node.js, React, portfolio">
+    <meta name="author" content="Thomas Eduardo">
+    <title>Thomas Eduardo - Portfolio</title>
+    
+    <link rel="icon" href="/assets/favicon-claro-CkF6ZgOW.png" />
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l !== 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-KT8GKBWD');
+    </script>
+    <!-- End Google Tag Manager -->
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-232Z5TC9ZZ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-232Z5TC9ZZ');
+    </script>
+
+    <!-- Hotjar Tracking Code -->
+    <script>
+        (function (h, o, t, j, a, r) {
+            h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments); };
+            h._hjSettings = { hjid: 5095290, hjsv: 6 };
+            a = o.getElementsByTagName('head')[0];
+            r = o.createElement('script'); r.async = 1;
+            r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+    </script>
+
+    <!-- Tawk.to Script -->
+    <script>
+        var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+        (function () {
+            var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/your_tawk_id/default'; // Atualize 'your_tawk_id'
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
+        })();
+    </script>
+
+    <!-- Inicialização de Bibliotecas -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Inicialização do AOS
+            AOS.init();
+
+            // Inicialização do CountUp.js
+            const countUpElement = document.getElementById('countUpElement');
+            if (countUpElement) {
+                const countUp = new CountUp(countUpElement, 1000, { duration: 2 });
+                countUp.start();
+            }
+
+            // Inicialização do Owl Carousel
+            $('.owl-carousel').owlCarousel({
+                loop: true,
+                margin: 10,
+                nav: true,
+                items: 1,
+            });
+
+            // Inicialização do Particles.js
+            particlesJS.load('particles-js', 'path/to/particles.json', function () {
+                console.log('callback - particles.js config loaded');
+            });
+        });
+    </script>
+  <script type="module" crossorigin src="/assets/index-B-dONyax.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-BTexj4_u.css">
+</head>
+<body>
+    <div id="app"></div> 
+</body>
+</html>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE cross-domain-policy SYSTEM "http://www.macromedia.com/xml/dtd/cross-domain-policy.dtd">
+<cross-domain-policy>
+    <!-- Permitir acesso de domínios específicos -->
+    <allow-access-from domain="devthm.site" />
+    
+    <!-- Permitir acesso de subdomínios -->
+    <allow-access-from domain="*.devthm.site" />
+    
+    <!-- Bloquear acesso de outros domínios -->
+    <allow-access-from domain="*" secure="false" />
+</cross-domain-policy>

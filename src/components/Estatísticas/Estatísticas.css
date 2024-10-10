@@ -1,0 +1,53 @@
+.estatisticas-section {
+    @apply py-14 bg-gray-50 dark:bg-[#111];
+}
+
+.estatisticas-container {
+    @apply max-w-screen-xl mx-auto px-4 md:px-8;
+}
+
+.estatisticas-header {
+    @apply max-w-2xl mx-auto text-center;
+}
+
+.estatisticas-title {
+    @apply text-3xl font-semibold sm:text-4xl md:text-5xl;
+}
+
+.estatisticas-description {
+    @apply mt-3 text-gray-600 dark:text-gray-400;
+}
+
+.estatisticas-list {
+    @apply mt-12 grid grid-cols-2 gap-6 sm:grid-cols-4;
+}
+
+.estatisticas-item {
+    @apply text-center flex flex-col items-center;
+}
+
+.estatisticas-icon {
+    @apply w-16 h-16 mb-2;
+}
+
+.estatisticas-counter {
+    @apply text-5xl sm:text-6xl text-indigo-400 font-semibold;
+}
+
+.estatisticas-label {
+    @apply mt-2 font-medium text-gray-700 dark:text-gray-300;
+}
+
+/* Animação */
+@keyframes counterAnimation {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.counter-visible {
+    animation: counterAnimation 0.5s ease-in-out forwards;
+}

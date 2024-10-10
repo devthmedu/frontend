@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+<svg width="800px" height="800px" viewBox="0 -1.5 2253 2253" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:serif="http://www.serif.com/" xmlns:xlink="http://www.w3.org/1999/xlink">
+<rect height="2250" id="bar_chart_sorted" style="fill:none;" width="2250" x="1.393" y="0"/>
+<rect height="1458.33" style="fill:#3050f3;stroke:#000000;stroke-width:66.67px;" width="312.5" x="1437.61" y="395.833"/>
+<rect height="833.333" style="fill:#4dbe4b;stroke:#000000;stroke-width:66.67px;" width="312.5" x="397.226" y="1020.83"/>
+<rect height="1250" style="fill:#308df8;stroke:#000000;stroke-width:66.67px;" width="312.5" x="918.06" y="604.167"/>
+<g>
+<path d="M288.893,387.5l-100,-200l-100,200l200,0Z"/>
+<path d="M1863.89,1962.5l200,100l-200,100l0,-200Z"/>
+<path d="M188.893,347.5l0,1715l1715,0" style="fill:none;stroke:#000000;stroke-width:66.67px;"/>
+</g>
+</svg>

@@ -1,0 +1,100 @@
+.navbar {
+    @apply border-b transition duration-300 ease-in-out;
+}
+
+.navbar-light {
+    @apply bg-white shadow-md; /* Adiciona sombra para destaque */
+}
+
+.navbar-dark {
+    @apply bg-gray-900 shadow-md; /* Adiciona sombra para destaque */
+}
+
+.navbar-container {
+    @apply flex items-center space-x-8 py-3 px-4 max-w-screen-xl mx-auto md:px-8;
+}
+
+.profile-dropdown {
+    @apply relative;
+}
+
+.profile-button {
+    @apply w-10 h-10 outline-none rounded-full ring-offset-2 ring-2 transition duration-200;
+}
+
+.profile-button-light {
+    @apply ring-gray-200;
+}
+
+.profile-button-dark {
+    @apply ring-gray-700;
+}
+
+.profile-image {
+    @apply w-full h-full rounded-full object-cover; /* Melhora a apresentação da imagem */
+}
+
+.profile-name {
+    @apply block text-gray-800 font-semibold; /* Estilo mais forte para o nome */
+}
+
+.profile-email {
+    @apply block text-sm text-gray-500;
+}
+
+.dropdown-menu {
+    @apply absolute top-12 left-0 mt-1 space-y-1 lg:w-52 lg:shadow-md lg:rounded-md lg:text-sm;
+}
+
+.dropdown-menu-light {
+    @apply bg-white border border-gray-200; /* Adiciona uma borda */
+}
+
+.dropdown-menu-dark {
+    @apply bg-gray-800 border border-gray-700; /* Adiciona uma borda */
+}
+
+.dropdown-item {
+    @apply block text-gray-600 transition duration-150 rounded-md; /* Adiciona bordas arredondadas */
+}
+
+.dropdown-item-light:hover {
+    @apply bg-gray-50 p-2.5; /* Efeito hover leve */
+}
+
+.dropdown-item-dark:hover {
+    @apply bg-gray-700 p-2.5; /* Efeito hover escuro */
+}
+
+.theme-toggle {
+    @apply flex items-center space-x-2 px-4 py-2 text-white bg-indigo-600 rounded-lg hover:bg-indigo-500 transition duration-150 shadow-sm; /* Sombra leve */
+}
+
+.menu-toggle {
+    @apply outline-none block lg:hidden;
+}
+
+.logo {
+    @apply flex-none lg:flex-initial;
+}
+
+.logo-image {
+    @apply w-12 h-12 object-cover; /* Ajuste para o tamanho do logo */
+}
+
+/* Responsividade */
+@media (max-width: 640px) {
+    .profile-dropdown {
+        @apply hidden; /* Oculta o dropdown em telas menores */
+    }
+
+    .menu-toggle {
+        @apply block; /* Mostra o botão de menu em telas menores */
+    }
+}
+
+@media (min-width: 640px) {
+    .menu-toggle {
+        @apply hidden; /* Oculta o botão de menu em telas maiores */
+    }
+}

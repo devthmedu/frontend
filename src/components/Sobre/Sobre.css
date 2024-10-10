@@ -1,0 +1,56 @@
+@import 'animate.css';
+
+.section {
+    @apply py-14;
+}
+
+.section-header {
+    @apply text-gray-800 dark:text-white text-3xl font-semibold sm:text-4xl text-center mb-4;
+}
+
+.feature-item {
+    @apply bg-white dark:bg-gray-800 space-y-3 p-4 border border-gray-300 dark:border-gray-700 rounded-lg shadow-lg transition-transform duration-300 hover:shadow-xl transform hover:scale-105;
+}
+
+.feature-icon {
+    @apply w-16 h-16 transition-transform duration-300 transform hover:scale-125;
+}
+
+.profile-image {
+    @apply w-full h-auto max-w-xs mx-auto rounded-lg transition-transform duration-300 transform hover:scale-110;
+}
+
+.link-icon {
+    @apply w-10 h-10 text-indigo-600 hover:text-indigo-800 transition-transform duration-200 transform hover:scale-110 hover:rotate-12;
+}
+
+.card-blur {
+    @apply absolute inset-0 max-w-xs mx-auto h-44 blur-[118px];
+    background: linear-gradient(152.92deg, rgba(192, 132, 252, 0.2) 4.54%, rgba(232, 121, 249, 0.26) 34.2%, rgba(192, 132, 252, 0.1) 77.55%);
+}
+
+.stats-section {
+    @apply mt-14;
+}
+
+.fade-in {
+    @apply opacity-0 transition-opacity duration-500 ease-in;
+}
+
+.fade-in.active {
+    @apply opacity-100;
+}
+
+@media (max-width: 768px) {
+    .section {
+        @apply px-4;
+    }
+    
+    .profile-image {
+        @apply max-w-full;
+    }
+
+    .feature-item {
+        @apply p-3;
+    }
+}

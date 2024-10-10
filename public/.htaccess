@@ -1,0 +1,67 @@
+# Habilita o módulo de reescrita
+RewriteEngine On
+
+# Redireciona HTTP para HTTPS
+<IfModule mod_rewrite.c>
+  RewriteCond %{HTTPS} off
+  RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+</IfModule>
+
+# Reescreve URLs amigáveis para arquivos .html
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([0-9A-Za-z-_]+)(/.*)?$ /$1.html [L]
+
+# Redireciona URLs que contêm .html para URLs amigáveis sem extensão
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s([^.]+)\.html [NC]
+RewriteRule ^ %1 [R=301,L]
+
+# Reescreve URLs amigáveis para arquivos .php
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^(.*)$ $1.php [L]
+
+# Redireciona o diretório raiz para index.html
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^$ /index.html [L]
+
+# Protege arquivos sensíveis
+<FilesMatch "\.(env|git|gitignore|htaccess|htpasswd|log)$">
+  Require all denied
+</FilesMatch>
+
+# Desativa a listagem de diretórios
+Options -Indexes
+
+# Configuração de Cache
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresDefault "access plus 1 month"
+  ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType image/png "access plus 1 year"
+  ExpiresByType image/gif "access plus 1 year"
+  ExpiresByType text/css "access plus 1 month"
+  ExpiresByType application/javascript "access plus 1 month"
+</IfModule>
+
+# Configuração de Segurança
+<IfModule mod_headers.c>
+  # Protege contra ataques XSS
+  Header set X-XSS-Protection "1; mode=block"
+  
+  # Protege contra cliques em CSRF
+  Header set X-Content-Type-Options "nosniff"
+  
+  # Protege contra frame embedding
+  Header always append X-Frame-Options "SAMEORIGIN"
+  
+  # Define a política de segurança de conteúdo
+  Header set Content-Security-Policy "default-src 'self'; script-src 'self' https://cdnjs.cloudflare.com; style-src 'self' https://cdnjs.cloudflare.com; img-src 'self' data:; connect-src 'self';"
+</IfModule>
+
+# Protege contra Hotlinking
+<IfModule mod_rewrite.c>
+  RewriteCond %{HTTP_REFERER} !^https?://(www\.)?devthm\.site [NC]
+  RewriteRule \.(jpg|jpeg|png|gif|webp)$ - [F,NC,L]
+</IfModule>

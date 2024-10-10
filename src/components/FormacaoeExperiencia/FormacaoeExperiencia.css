@@ -1,0 +1,33 @@
+.education-timeline {
+    padding: 3.5rem 0; /* py-14 */
+    background-color: #f9fafb; /* bg-gray-50 */
+}
+
+.timeline-section {
+    max-width: 1200px; /* max-w-screen-xl */
+    margin: 0 auto; /* mx-auto */
+    padding: 0 1rem; /* px-4 */
+}
+
+.timeline-title {
+    text-align: center; /* text-center */
+    margin-bottom: 2rem; /* mb-8 */
+}
+
+.timeline-item {
+    background-color: #fff; /* bg-white */
+    border-radius: 0.5rem; /* rounded-lg */
+    padding: 1rem; /* p-4 */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* shadow-lg */
+    position: relative; /* for the connecting line */
+}
+
+.timeline-date {
+    color: #6b7280; /* text-gray-600 */
+    margin-left: 0.5rem; /* ml-2 */
+}
+
+/* Dark mode styles */
+.dark .timeline-item {
+    background-color: #1f2937; /* dark:bg-gray-800 */
+}

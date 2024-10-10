@@ -1,0 +1,139 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.app-container {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.app-container.light {
+  background-color: #ffffff; /* Cor de fundo clara */
+  color: #000000; /* Texto preto */
+}
+
+.app-container.dark {
+  background-color: #111; /* Cor de fundo escura */
+  color: #ffffff; /* Texto branco */
+}
+
+.dark .bg-white {
+  background-color: #111; /* Fundo escuro para elementos brancos */
+}
+
+.dark .border-gray-700 {
+  border-color: #333; /* Borda escura */
+}
+
+.dark .text-gray-600 {
+  color: #e6e7e8; /* Texto claro */
+}
+
+.button {
+  @apply px-4 py-2 rounded-lg font-semibold transition duration-200 ease-in-out;
+  background-color: #5c6bf2; /* Cor de fundo padrão */
+  color: white; /* Texto branco */
+}
+
+.button:hover {
+  @apply bg-indigo-600 text-white transform scale-105 shadow-lg; /* Efeito de hover */
+}
+
+.card {
+  @apply shadow-lg rounded-lg transition duration-300 ease-in-out;
+  background-color: #f8f9fa; /* Fundo claro para cartões */
+}
+
+.card:hover {
+  @apply shadow-xl transform scale-105; /* Efeito de hover em cartões */
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1); /* Fundo da barra de rolagem */
+  border-radius: 10px; /* Bordas arredondadas */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #5c6bf2; /* Cor do "thumb" */
+  border-radius: 10px; /* Bordas arredondadas */
+  transition: background 0.3s;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #4a54e1; /* Cor do "thumb" em hover */
+}
+
+* {
+  scrollbar-width: thin; /* Largura da barra de rolagem */
+  scrollbar-color: #5c6bf2 rgba(255, 255, 255, 0.1); /* Cor da barra de rolagem */
+}
+
+a {
+  @apply transition duration-200 ease-in-out;
+  color: inherit; /* Cor padrão */
+}
+
+a:hover {
+  @apply text-indigo-600; /* Cor de link em hover */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @apply transition duration-300 ease-in-out;
+}
+
+.custom-bg {
+  @apply bg-gray-200 dark:bg-gray-800; /* Fundo customizado */
+}
+
+.custom-border {
+  @apply border border-gray-300 dark:border-gray-600; /* Bordas customizadas */
+}
+
+.custom-text {
+  @apply text-gray-800 dark:text-gray-200; /* Texto customizado */
+}
+
+.text-white {
+  color: rgb(255, 255, 255); /* Texto branco */
+  transition: color 0.3s ease; /* Transição de cor */
+}
+
+.text-white:hover {
+  color: rgb(0, 0, 0); /* Efeito de hover no texto branco */
+}
+
+.dark .text-gray-600 {
+  color: #e6e7e8; /* Texto claro no tema escuro */
+  transition: color 0.3s ease; /* Transição de cor */
+}
+
+.dark .text-gray-600:hover {
+  color: #000; /* Efeito de hover em texto claro */
+}
+
+/* Adicionando estilos para cabeçalhos */
+h1 {
+  @apply text-3xl font-bold; /* Estilo para h1 */
+}
+
+h2 {
+  @apply text-2xl font-semibold; /* Estilo para h2 */
+}
+
+h3 {
+  @apply text-xl font-medium; /* Estilo para h3 */
+}
+
+/* Efeitos gerais */
+.transition-effect {
+  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Efeitos de transição */
+}
+
+.transition-effect:hover {
+  transform: scale(1.02); /* Efeito de escala em hover */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra em hover */
+}

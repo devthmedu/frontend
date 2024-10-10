@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+	 viewBox="0 0 512 512" xml:space="preserve">
+<path d="M358.584,512H153.416c-21.864-0.064-39.568-17.768-39.632-39.632V39.632C113.848,17.768,131.552,0.064,153.416,0h205.168
+	c21.864,0.064,39.568,17.768,39.632,39.632v432.736C398.144,494.224,380.44,511.928,358.584,512z"/>
+<g>
+	<rect x="132.544" y="40.4" style="fill:#CCCCCC;" width="246.912" height="403.76"/>
+	<path style="fill:#CCCCCC;" d="M293.032,24.424h-50.528c-2.28-0.008-4.12-1.848-4.128-4.128l0,0c0.008-2.28,1.848-4.12,4.128-4.128
+		h50.528c2.28,0.008,4.12,1.848,4.128,4.128l0,0C297.152,22.576,295.312,24.416,293.032,24.424z"/>
+	<circle style="fill:#CCCCCC;" cx="218.968" cy="20.296" r="4.128"/>
+	<path style="fill:#CCCCCC;" d="M256,497.568c-10.784,0-19.52-8.736-19.52-19.52s8.736-19.52,19.52-19.52
+		c10.784,0,19.52,8.736,19.52,19.52l0,0C275.504,488.824,266.776,497.552,256,497.568z M256,462.52
+		c-8.568,0-15.52,6.952-15.52,15.52s6.952,15.52,15.52,15.52s15.52-6.952,15.52-15.52l0,0
+		C271.512,469.472,264.568,462.528,256,462.52z"/>
+</g>
+<rect x="150.152" y="86.664" style="fill:#E21B1B;" width="40" height="40"/>
+<rect x="207.384" y="86.664" style="fill:#FFFFFF;" width="40" height="40"/>
+<rect x="264.64" y="86.664" style="fill:#E21B1B;" width="40" height="40"/>
+<rect x="321.84" y="86.664" width="40" height="40"/>
+<rect x="150.152" y="151.768" style="fill:#FFFFFF;" width="40" height="40"/>
+<rect x="207.384" y="151.768" style="fill:#E21B1B;" width="40" height="40"/>
+<rect x="264.64" y="151.768" width="40" height="40"/>
+<rect x="321.84" y="151.768" style="fill:#E21B1B;" width="40" height="40"/>
+<rect x="150.152" y="216.88" width="40" height="40"/>
+<g>
+	<rect x="207.384" y="216.88" style="fill:#FFFFFF;" width="40" height="40"/>
+	<rect x="264.64" y="216.88" style="fill:#FFFFFF;" width="40" height="40"/>
+</g>
+<g>
+	<rect x="321.84" y="216.88" style="fill:#E21B1B;" width="40" height="40"/>
+	<rect x="150.152" y="282" style="fill:#E21B1B;" width="40" height="40"/>
+	<rect x="207.384" y="282" style="fill:#E21B1B;" width="40" height="40"/>
+</g>
+<rect x="264.64" y="282" width="40" height="40"/>
+<g>
+	<rect x="321.84" y="282" style="fill:#FFFFFF;" width="40" height="40"/>
+	<rect x="150.152" y="347.04" style="fill:#FFFFFF;" width="40" height="40"/>
+</g>
+<rect x="207.384" y="347.04" width="40" height="40"/>
+<g>
+	<rect x="264.64" y="347.04" style="fill:#E21B1B;" width="40" height="40"/>
+	<rect x="321.84" y="347.04" style="fill:#E21B1B;" width="40" height="40"/>
+</g>
+</svg>

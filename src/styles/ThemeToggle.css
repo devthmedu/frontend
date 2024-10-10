@@ -1,0 +1,43 @@
+/* CSS para os temas */
+body {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Estilo para o tema escuro */
+.dark-mode {
+    background-color: #000;
+    color: #fff;
+}
+
+/* Estilo para o tema claro */
+.light-mode {
+    background-color: #fff;
+    color: #333;
+}
+
+/* Estilos adicionais para facilitar a leitura */
+a {
+    transition: color 0.3s ease;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    transition: color 0.3s ease;
+}
+
+/* Estilos para o scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+::-webkit-scrollbar-thumb {
+    background: #5c6bf2;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #4a54e1;
+}

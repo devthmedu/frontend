@@ -1,0 +1,39 @@
+.skill-section {
+    @apply py-14 bg-gray-50 dark:bg-[#111];
+}
+
+.skill-title {
+    @apply text-gray-800 dark:text-white text-3xl font-semibold sm:text-4xl text-center;
+}
+
+.skill-description {
+    @apply text-gray-600 dark:text-gray-400 mt-3 text-center;
+}
+
+.skill-list {
+    @apply mt-12 flex justify-center grid grid-cols-2 gap-x-6 gap-y-6 md:grid-cols-4 lg:grid-cols-8;
+}
+
+.skill-item {
+    @apply flex justify-center transition-all duration-200 transform hover:shadow-lg hover:bg-gray-200 dark:hover:bg-gray-800 p-4 rounded-lg;
+}
+
+.skill-icon {
+    @apply w-16 h-16 mb-2 transition-transform duration-200 hover:scale-110;
+}
+
+.skill-name {
+    @apply text-gray-700 dark:text-gray-300 text-sm text-center;
+}
+
+@media (max-width: 768px) {
+    .skill-item {
+        @apply p-3; /* Ajusta o padding em telas menores */
+    }
+}
+
+@media (min-width: 768px) {
+    .skill-list {
+        @apply grid-cols-3; /* Adiciona uma coluna extra em telas médias */
+    }
+}

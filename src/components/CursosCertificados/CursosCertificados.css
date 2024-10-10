@@ -1,0 +1,43 @@
+.education-section {
+    @apply py-14 bg-gray-50 dark:bg-[#111];
+}
+
+.education-container {
+    @apply max-w-screen-xl mx-auto px-4 md:px-8;
+}
+
+.education-header {
+    @apply max-w-xl text-center mx-auto;
+}
+
+.education-title {
+    @apply text-gray-800 dark:text-gray-200 text-3xl font-semibold sm:text-4xl;
+}
+
+.education-description {
+    @apply text-gray-600 dark:text-gray-400 mt-3;
+}
+
+.education-list {
+    @apply mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3;
+}
+
+.education-item {
+    @apply flex flex-col items-center p-6 bg-white dark:bg-gray-800 shadow-lg rounded-lg transition-transform duration-200 hover:scale-105;
+}
+
+.education-avatar {
+    @apply flex-none w-28 h-28 mb-4;
+}
+
+.education-avatar-img {
+    @apply w-full h-full rounded-full border-4 border-indigo-600 shadow-md;
+}
+
+.education-name {
+    @apply text-gray-700 dark:text-gray-200 font-semibold text-lg;
+}
+
+.education-title-text {
+    @apply text-indigo-600 dark:text-indigo-400 text-sm text-center mt-1;
+}
