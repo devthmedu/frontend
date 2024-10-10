@@ -13,7 +13,7 @@ export default defineConfig({
   },
   resolve: {
     alias: {
-      '@': '/src',
+      '/': new URL('./', import.meta.url).pathname, // Configura a raiz do projeto
     },
   },
 });

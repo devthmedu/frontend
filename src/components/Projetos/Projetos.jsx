@@ -32,7 +32,7 @@ const ProjectCard = ({ project, onImageClick }) => (
         />
         <div className="flex items-center mt-2 pt-3 px-4">
             <div className="flex-none w-12 h-12 rounded-full overflow-hidden shadow-md">
-                <img src={project.favicon || '/path/to/universal-logo.png'} className="w-full h-full object-cover" alt={project.title} />
+                <img src={project.favicon || '/icons-skill/universal-logo.png'} className="w-full h-full object-cover" alt={project.title} />
             </div>
             <div className="ml-3">
                 <span className="block text-gray-900 font-semibold">{project.title}</span>
@@ -166,6 +166,16 @@ export default function Projects() {
             date: 'Setembro de 2024',
             githubLink: 'https://github.com/devthmedu/Formulario-de-contato-com-db',
             siteLink: '#',
+        },
+        {
+            title: 'Jogo da Velha',
+            desc: 'Um jogo simples de Jogo da Velha desenvolvido em React. Este projeto permite que dois jogadores joguem no mesmo dispositivo, proporcionando diversão e desafio.',
+            img: '/portifolios/jogo-da-velha.png',
+            favicon: '/portifolios/favicon-projetos/tic-tac-toe.svg',
+            technologies: ['HTML', 'CSS', 'JavaScript', 'React'],
+            date: 'Setembro de 2024',
+            githubLink: 'https://github.com/devthmedu/Jogo-da-Velha',
+            siteLink: 'https://devthmedu.github.io/Jogo-da-Velha/',
         },
     ];
 
