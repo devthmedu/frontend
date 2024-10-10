@@ -9,7 +9,7 @@ const technologyImages = {
     CSS: '/icons-skill/css.svg',
     JavaScript: '/icons-skill/js.svg',
     React: '/icons-skill/react.svg',
-    Node: '/icons-skill/node.svg',
+    Node: '/icons-skill/no.svg',
     MongoDB: '/icons-skill/mongodb.svg',
     Figma: '/icons-skill/figma.svg',
     Git: '/icons-skill/git.svg',
@@ -27,7 +27,7 @@ const ProjectCard = ({ project, onImageClick }) => (
             src={project.img}
             loading="lazy"
             alt={project.title}
-            className="w-full h-60 rounded-t-lg object-cover cursor-pointer"
+            className="w-full h-30 rounded-t-lg object-cover cursor-pointer"
             onClick={() => onImageClick(project.img)}
         />
         <div className="flex items-center mt-2 pt-3 px-4">
@@ -107,16 +107,7 @@ export default function Projects() {
             githubLink: 'https://github.com/devthmedu/Biblioteca-Digital',
             siteLink: 'https://devthmedu.github.io/Biblioteca-Digital/',
         },
-        {
-            title: 'Calculadora de Gorjetas',
-            desc: 'Esta calculadora de gorjetas responsiva ajuda os usuários a calcular o valor da gorjeta com base no total da conta, na qualidade do serviço e no número de pessoas. Inclui opções para aplicar descontos em pagamentos em dinheiro ou via Pix.',
-            img: '/portifolios/calculadora-de-gorjetas.jpg',
-            favicon: '/portifolios/favicon-projetos/Abacus.webp',
-            technologies: ['HTML', 'CSS', 'JavaScript'],
-            date: 'Setembro de 2024',
-            githubLink: 'https://github.com/devthmedu/Calculadora-de-Gorjetas',
-            siteLink: 'https://devthmedu.github.io/Calculadora-de-Gorjetas/',
-        },
+        
         {
             title: 'Social para Pets',
             desc: 'Desenvolvido como parte do curso completo de React da Origamid, este projeto serve como uma rede social para amantes de animais, permitindo interação e compartilhamento de experiências.',
@@ -128,55 +119,17 @@ export default function Projects() {
             siteLink: 'https://rede-pets.vercel.app/',
         },
         {
-            title: 'Dieta.IA',
-            desc: 'O Dieta.IA é um aplicativo inovador que ajuda os usuários a criar dietas personalizadas de forma eficiente e intuitiva, com sugestões baseadas em preferências alimentares e necessidades nutricionais.',
-            img: '/portifolios/Dieta.ia-app-mobile.jpg',
-            favicon: '/portifolios/favicon-projetos/dieta-ia.png',
-            technologies: ['HTML', 'CSS', 'JavaScript'],
-            date: 'Setembro de 2024',
-            githubLink: 'https://github.com/devthmedu/Dieta_IA',
-            siteLink: '#',
+                title: 'Dieta.IA',
+                desc: 'Dieta.IA é um aplicativo revolucionário que permite aos usuários criar dietas personalizadas de forma eficiente. Com uma interface intuitiva e sugestões adaptadas a preferências alimentares e necessidades nutricionais individuais, o aplicativo visa facilitar a adoção de hábitos alimentares saudáveis e sustentáveis.',
+                img: '/portifolios/Dieta.ia-app-mobile.jpg',
+                favicon: '/portifolios/favicon-projetos/Fork And Knife With Plate.webp',
+                technologies: ['HTML', 'CSS', 'JavaScript'],
+                date: 'Setembro de 2024',
+                githubLink: 'https://github.com/devthmedu/Dieta_IA',
+                siteLink: '#',
         },
-        {
-            title: 'Site Starbucks',
-            desc: 'Este projeto simula uma página inicial do Starbucks, desenvolvida com HTML, CSS e JavaScript. A interface é totalmente responsiva, adaptando-se a diversos tamanhos de tela, de smartphones a desktops.',
-            img: '/portifolios/site-starbucks.png',
-            favicon: '/portifolios/favicon-projetos/starbucks.svg',
-            technologies: ['HTML', 'CSS', 'JavaScript'],
-            date: 'Setembro de 2024',
-            githubLink: 'https://github.com/devthmedu/Projeto-Starbucks',
-            siteLink: 'https://devthmedu.github.io/Projeto-Starbucks/',
-        },
-        {
-            title: 'API Media Social',
-            desc: 'Este projeto é um backend para uma rede social simples, onde os usuários podem se registrar, autenticar, criar postagens e visualizar suas informações. Construído com Node.js e MongoDB, o sistema utiliza JSON Web Token (JWT).',
-            img: '/portifolios/Api-media-social.jpg',
-            favicon: '/portifolios/favicon-projetos/api.svg',
-            technologies: ['HTML', 'CSS', 'JavaScript'],
-            date: 'Setembro de 2024',
-            githubLink: 'https://github.com/devthmedu/Projeto-Starbucks',
-            siteLink: 'https://devthmedu.github.io/Projeto-Starbucks/',
-        },
-        {
-            title: 'Formulário de Contato com MongoDB',
-            desc: 'Este aplicativo web é um formulário de contato construído com Node.js e MongoDB, que coleta e armazena informações dos usuários em um banco de dados, oferecendo feedback após o envio.',
-            img: '/portifolios/Formulario-DB-Backend.jpg',
-            favicon: '/portifolios/favicon-projetos/mongodb.svg',
-            technologies: ['JavaScript', 'Bootstrap', 'Express', 'MongoDB'],
-            date: 'Setembro de 2024',
-            githubLink: 'https://github.com/devthmedu/Formulario-de-contato-com-db',
-            siteLink: '#',
-        },
-        {
-            title: 'Jogo da Velha',
-            desc: 'Um jogo simples de Jogo da Velha desenvolvido em React. Este projeto permite que dois jogadores joguem no mesmo dispositivo, proporcionando diversão e desafio.',
-            img: '/portifolios/jogo-da-velha.png',
-            favicon: '/portifolios/favicon-projetos/tic-tac-toe.svg',
-            technologies: ['HTML', 'CSS', 'JavaScript', 'React'],
-            date: 'Setembro de 2024',
-            githubLink: 'https://github.com/devthmedu/Jogo-da-Velha',
-            siteLink: 'https://devthmedu.github.io/Jogo-da-Velha/',
-        },
+      
+        
     ];
 
     const handleImageClick = (img) => {
@@ -193,16 +146,19 @@ export default function Projects() {
                 <h1 className="text-3xl text-gray-800 font-semibold animate__backInRight">Portfólio</h1>
                 <p className="mt-3 text-gray-500">Projetos que desenvolvi e dos quais estou orgulhoso.</p>
             </div>
-            <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+            <div className="mt-14 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
                 {projects.map((project, index) => (
                     <ProjectCard key={index} project={project} onImageClick={handleImageClick} />
                 ))}
             </div>
-            <div className="flex justify-center mt-4">
-                <Link to="/todos-projetos" className="bg-blue-500 text-white py-3 px-6 rounded-lg shadow-lg hover:bg-blue-600 transition duration-300">
-                    Ver Todos os Projetos
-                </Link>
-            </div>
+          <div className="flex justify-center my-12">
+            <Link to="/todos-projetos" className="bg-gradient-to-r from-blue-500 to-blue-600 text-white py-3 px-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 transform hover:scale-105">
+                Ver Todos os Projetos
+            </Link>
+        </div>
+
+
+
             {selectedImage && (
                 <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50" onClick={handleCloseImage}>
                     <img src={selectedImage} alt="Projeto" className="max-w-full max-h-full" />

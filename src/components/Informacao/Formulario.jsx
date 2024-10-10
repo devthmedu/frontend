@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
-import SuccessModal from './SuccessModal'; // Ajuste o caminho conforme necessário
+import Footer from '../Footer/Footer';
+import Header from '../Nav/Nav';
+import SuccessModal from './SuccessModal';
 
 const ContactForm = () => {
     const [isModalOpen, setIsModalOpen] = useState(false);
@@ -33,47 +35,51 @@ const ContactForm = () => {
     };
 
     return (
-        <section className='py-14'>
-            <div className="max-w-screen-xl mx-auto text-gray-600 px-4 md:px-8 text-center">
-                <h2 className='text-3xl font-bold text-gray-800'>Entre em Contato</h2>
-                <p className="mt-4">Estou aqui para ajudar. Preencha o formulário abaixo e entraremos em contato!</p>
-                <form id="contactForm" onSubmit={handleSubmit} className="mt-8 max-w-md mx-auto">
-                    <div className="mb-4">
-                        <input
-                            type="text"
-                            name="name"
-                            placeholder="Seu Nome"
-                            required
-                            className="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring focus:ring-indigo-300"
-                        />
-                    </div>
-                    <div className="mb-4">
-                        <input
-                            type="email"
-                            name="email"
-                            placeholder="Seu Email"
-                            required
-                            className="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring focus:ring-indigo-300"
-                        />
-                    </div>
-                    <div className="mb-4">
-                        <textarea
-                            name="message"
-                            placeholder="Sua Mensagem"
-                            required
-                            className="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring focus:ring-indigo-300"
-                        />
-                    </div>
-                    <button
-                        type="submit"
-                        className='w-full px-4 py-2 rounded-lg font-semibold text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-400'
-                    >
-                        Enviar Mensagem
-                    </button>
-                </form>
-            </div>
-            {isModalOpen && <SuccessModal onClose={() => setIsModalOpen(false)} />}
-        </section>
+        <div>
+            <Header />
+            <section className='py-14'>
+                <div className="max-w-screen-xl mx-auto text-gray-600 px-4 md:px-8 text-center">
+                    <h2 className='text-3xl font-bold text-gray-800'>Entre em Contato</h2>
+                    <p className="mt-4">Estou aqui para ajudar. Preencha o formulário abaixo e entraremos em contato!</p>
+                    <form id="contactForm" onSubmit={handleSubmit} className="mt-8 max-w-md mx-auto">
+                        <div className="mb-4">
+                            <input
+                                type="text"
+                                name="name"
+                                placeholder="Seu Nome"
+                                required
+                                className="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring focus:ring-indigo-300"
+                            />
+                        </div>
+                        <div className="mb-4">
+                            <input
+                                type="email"
+                                name="email"
+                                placeholder="Seu Email"
+                                required
+                                className="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring focus:ring-indigo-300"
+                            />
+                        </div>
+                        <div className="mb-4">
+                            <textarea
+                                name="message"
+                                placeholder="Sua Mensagem"
+                                required
+                                className="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring focus:ring-indigo-300"
+                            />
+                        </div>
+                        <button
+                            type="submit"
+                            className='w-full px-4 py-2 rounded-lg font-semibold text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-400'
+                        >
+                            Enviar Mensagem
+                        </button>
+                    </form>
+                </div>
+                {isModalOpen && <SuccessModal onClose={() => setIsModalOpen(false)} />}
+            </section>
+            <Footer />
+        </div>
     );
 };
 

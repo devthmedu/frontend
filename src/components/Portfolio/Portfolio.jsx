@@ -2,11 +2,13 @@ import 'animate.css';
 import { FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa';
 import CursosCertificados from '../CursosCertificados/CursosCertificados';
 import Estatísticas from '../Estatísticas/Estatísticas';
+import Footer from '../Footer/Footer.jsx'; // Importando o Footer
 import FormacaoeExperiencia from '../FormacaoeExperiencia/FormacaoeExperiencia';
+import Header from '../Nav/Nav.jsx'; // Importando o Header
 import Projetos from '../Projetos/Projetos';
 import Skill from '../Skill/Skill';
-import Header from '../Nav/Nav.jsx'; // Importando o Header
-import Footer from '../Footer/Footer.jsx'; // Importando o Footer
+import Servicos from '../Informacao/Servicos';
+
 
 const What = () => {
     const features = [
@@ -67,6 +69,7 @@ const What = () => {
                     <CursosCertificados />
                     <Skill />
                     <Projetos />
+                    <Servicos />
                 </>
             );
         } catch (error) {
